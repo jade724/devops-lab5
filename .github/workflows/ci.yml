@@ -1,4 +1,4 @@
-name: CI
+name: Check GCC installation
 
 on:
   push:
@@ -16,6 +16,9 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Check GCC installation
+      run: gcc --version
+
     - name: Build the code
-      run: make
+      run: make VERBOSE=1
 

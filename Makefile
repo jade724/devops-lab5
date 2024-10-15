@@ -1,8 +1,8 @@
 all: main
 
 main: main.c
-gcc -o main main.c
+<TAB>gcc -o main main.c
 
 clean:
-rm -f main
+<TAB>rm -f main
 
